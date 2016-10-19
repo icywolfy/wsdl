@@ -1,0 +1,30 @@
+{
+  "name": "deepfreeze/wsdl",
+  "description": "WSDL PHP Type Library and Reader",
+  "type": "library",
+  "keywords": [
+    "wsdl",
+    "soap"
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.6.0",
+    "mockery/mockery": "~0.9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "DeepFreeze\\Wsdl\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DeepFreezeTest\\Wsdl\\": "test/src"
+    }
+  },
+  "suggest": {
+
+  },
+  "repositories": [
+  ]
+}

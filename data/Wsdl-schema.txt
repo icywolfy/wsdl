@@ -1,0 +1,66 @@
+<wsdl:definitions name="nmtoken"? targetNamespace="uri"?>
+
+    <import namespace="uri" location="uri"/>*
+
+    <wsdl:documentation .... /> ?
+
+    <wsdl:types> ?
+        <wsdl:documentation .... />?
+        <xsd:schema .... />*
+        <-- extensibility element --> *
+    </wsdl:types>
+
+    <wsdl:message name="nmtoken"> *
+        <wsdl:documentation .... />?
+        <part name="nmtoken" element="qname"? type="qname"?/> *
+    </wsdl:message>
+
+    <wsdl:portType name="nmtoken">*
+        <wsdl:documentation .... />?
+        <wsdl:operation name="nmtoken">*
+           <wsdl:documentation .... /> ?
+           <wsdl:input name="nmtoken"? message="qname">?
+               <wsdl:documentation .... /> ?
+           </wsdl:input>
+           <wsdl:output name="nmtoken"? message="qname">?
+               <wsdl:documentation .... /> ?
+           </wsdl:output>
+           <wsdl:fault name="nmtoken" message="qname"> *
+               <wsdl:documentation .... /> ?
+           </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="nmtoken" type="qname">*
+        <wsdl:documentation .... />?
+        <-- extensibility element --> *
+        <wsdl:operation name="nmtoken">*
+           <wsdl:documentation .... /> ?
+           <-- extensibility element --> *
+           <wsdl:input> ?
+               <wsdl:documentation .... /> ?
+               <-- extensibility element -->
+           </wsdl:input>
+           <wsdl:output> ?
+               <wsdl:documentation .... /> ?
+               <-- extensibility element --> *
+           </wsdl:output>
+           <wsdl:fault name="nmtoken"> *
+               <wsdl:documentation .... /> ?
+               <-- extensibility element --> *
+           </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="nmtoken"> *
+        <wsdl:documentation .... />?
+        <wsdl:port name="nmtoken" binding="qname"> *
+           <wsdl:documentation .... /> ?
+           <-- extensibility element -->
+        </wsdl:port>
+        <-- extensibility element -->
+    </wsdl:service>
+
+    <-- extensibility element --> *
+
+</wsdl:definitions>
